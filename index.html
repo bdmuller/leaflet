@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Map</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+   <script src = "myFirstMap/leaflet/data/market.geojson"></script>
+   <script src = "myFirstMap/leaflet/data/inn.geojson"></script>
+   <script src = "myFirstMap/leaflet/data/battery.geojson"></script>
+
+</head>
+<body>
+
+    <h1>Map of Charleston, South Carolina</h1>
+
+    <div id="mapid"></div>
+    <style>
+        #mapid{width: 900px; height: 500px;}
+    </style>
+
+    <script>
+    var map = L.map('mapid').setView([32.77750, -79.93527], 15); 
+
+       
+    var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}', {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	subdomains: 'abcd',
+	minZoom: 0,
+	maxZoom: 18,
+	ext: 'png'
+    }).addTo(map);
+    
+    var daTiles = {
+        "Open Street Map":Stamen_Terrain,
+        }
+
+    
+        
+        L.marker([32.78071, -79.93161]).addTo(map)
+            .bindPopup("Historic Market")
+            .openPopup();
+
+        L.marker([32.77053, -79.92999]).addTo(map)
+            .bindPopup("Meeting Street Inn")
+            .openPopup();
+
+        L.marker([32.77022, -79.92880]).addTo(map)
+            .bindPopup("Charleston Battery")
+            .openPopup();
+
+       
+        var uncIcon = L.icon({
+            iconUrl: 'https://www.flaticon.com/premium-icon/icons/svg/2279/2279906.svg',
+            iconSize: [50, 50], 
+            popupAnchor: [32.78071, -79.93161],
+        });
+
+        var uncIcon1 = L.icon({
+            iconUrl: 'https://www.flaticon.com/premium-icon/icons/svg/3897/3897843.svg',
+            iconSize: [50, 50], 
+            popupAnchor: [35.91206, -79.05419],
+        });
+
+        var uncIcon2 = L.icon({
+            iconUrl: 'https://www.flaticon.com/premium-icon/icons/svg/2985/2985659.svg',
+            iconSize: [50, 50], 
+            popupAnchor: [35.91066, -79.04977],
+        });
+
+        var customPopup = "The Historic Market.<br/><img src='https://www.thecharlestoncitymarket.com/warehouse/fm/images/Gallery%20New/CharlestonCityMarket_Gallery31.jpg'width='100px'/>";
+        var customPopup1 = "Meeting Street Inn.<br/><img src='https://www.meetingstreetinn.com/wp-content/uploads/2020/08/9.png'width='100px'/>";
+        var customPopup2 = "Charleston Battery.<br/><img src='https://u.realgeeks.media/soldoncharleston/charleston_battery_park.jpg'width='100px'/>";
+        
+        
+        L.geoJSON(market, { // a
+        pointToLayer: function (feature, latlng) { // b
+        return L.marker(latlng, {icon: uncIcon,});}}) // c
+        .bindPopup(customPopup,) // d
+        .addTo(map); //
+
+        L.geoJSON(inn, { // a
+        pointToLayer: function (feature, latlng) { // b
+        return L.marker(latlng, {icon: uncIcon1,});}}) // c
+        .bindPopup(customPopup1,) // d
+        .addTo(map); //
+
+        L.geoJSON(battery, { // a
+        pointToLayer: function (feature, latlng) { // b
+        return L.marker(latlng, {icon: uncIcon2,});}}) // c
+        .bindPopup(customPopup2,) // d
+        .addTo(map); //
+
+        L.control.layers(daTiles).addTo(map);
+    
+    </script>
+    
+</body>
+</html> 
