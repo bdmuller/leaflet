@@ -1,0 +1,21 @@
+0000000000000000000000000000000000000000 4399869987bfd32cb162d4e2b106ceb20806ee86 Bryan Muller <bdmuller@email.unc.edu> 1611852138 -0500	clone: from https://github.com/bdmuller/Geog370.git
+4399869987bfd32cb162d4e2b106ceb20806ee86 3b602c454cd2c46db34b463e844fefa90fc4b6c8 Bryan Muller <bdmuller@email.unc.edu> 1611852848 -0500	commit: unzip
+3b602c454cd2c46db34b463e844fefa90fc4b6c8 a0e735b8dd9827c0785ffea8ed7e907f1ec125ef Bryan Muller <bdmuller@email.unc.edu> 1611934697 -0500	commit: Final_change
+a0e735b8dd9827c0785ffea8ed7e907f1ec125ef f9c7c9a15cb7722bc99138115db7ecf77b6bdd7a Bryan Muller <bdmuller@email.unc.edu> 1611935795 -0500	commit: Index
+f9c7c9a15cb7722bc99138115db7ecf77b6bdd7a 56000626b78b118c9e364fb796b1671b23661f71 Bryan Muller <bdmuller@email.unc.edu> 1612791439 -0500	commit: Lesson_3
+56000626b78b118c9e364fb796b1671b23661f71 e0bfb757baa3a0f2d4259e820a7f29f342fc3a9e Bryan Muller <bdmuller@email.unc.edu> 1612792245 -0500	commit: new
+e0bfb757baa3a0f2d4259e820a7f29f342fc3a9e ee2854f28ef64bc85bfc0412e84edebf35b9d7dd Bryan Muller <bdmuller@email.unc.edu> 1612792288 -0500	commit: last
+ee2854f28ef64bc85bfc0412e84edebf35b9d7dd 6c8ca4a5029f37b3892870dfccada3fc4c43644a Bryan Muller <bdmuller@email.unc.edu> 1612792290 -0500	pull --progress origin: Merge made by the 'recursive' strategy.
+6c8ca4a5029f37b3892870dfccada3fc4c43644a d47a539ef65d94ce6c37b79169d8f7ae9a89bded Bryan Muller <bdmuller@email.unc.edu> 1612792517 -0500	commit: Create geonewtile.html
+d47a539ef65d94ce6c37b79169d8f7ae9a89bded bae1fd7237a8fd7e49f9186d024893c5c3dff736 Bryan Muller <bdmuller@email.unc.edu> 1612796907 -0500	commit: hopeful
+bae1fd7237a8fd7e49f9186d024893c5c3dff736 bae1fd7237a8fd7e49f9186d024893c5c3dff736 Bryan Muller <bdmuller@email.unc.edu> 1612796949 -0500	reset: moving to HEAD
+bae1fd7237a8fd7e49f9186d024893c5c3dff736 8b6f9d8ee429d79d7c421392f7b3fad031719d3f Bryan Muller <bdmuller@email.unc.edu> 1612796950 -0500	pull --progress origin: Merge made by the 'recursive' strategy.
+8b6f9d8ee429d79d7c421392f7b3fad031719d3f 98048b508d5cbf6c49c48cfa82083f5b47c76001 Bryan Muller <bdmuller@email.unc.edu> 1612797347 -0500	commit: hopeful
+98048b508d5cbf6c49c48cfa82083f5b47c76001 8a5e9c1b6fc78290db6bb655273735b467bfcea4 Bryan Muller <bdmuller@email.unc.edu> 1612798995 -0500	commit: tiles
+8a5e9c1b6fc78290db6bb655273735b467bfcea4 4d1bd9b1501fdf537d9dfc407ef4419597a683f1 Bryan Muller <bdmuller@email.unc.edu> 1612799010 -0500	pull --progress origin: Merge made by the 'recursive' strategy.
+4d1bd9b1501fdf537d9dfc407ef4419597a683f1 3a24c95f556b9b43e072cac01e4223e846d24a56 Bryan Muller <bdmuller@email.unc.edu> 1612799288 -0500	commit: Update web.html
+3a24c95f556b9b43e072cac01e4223e846d24a56 a30b796062fa7bc5053ed86db00a670689b9bf7e Bryan Muller <bdmuller@email.unc.edu> 1612801389 -0500	pull --progress origin: Fast-forward
+a30b796062fa7bc5053ed86db00a670689b9bf7e 9eefcdfa6b45bc75aafd73a196fc0d870c86ca8b Bryan Muller <bdmuller@email.unc.edu> 1612801754 -0500	revert: Revert "Delete geo directory"
+9eefcdfa6b45bc75aafd73a196fc0d870c86ca8b 5efea9c1939b7b873b95cba5853ff44f0e395b14 Bryan Muller <bdmuller@email.unc.edu> 1614356258 -0500	commit: Leaflet_charleston
+5efea9c1939b7b873b95cba5853ff44f0e395b14 7f6c6fca174010dfebdac9b23206081bb3222678 Bryan Muller <bdmuller@email.unc.edu> 1614356805 -0500	revert: Revert "Leaflet_charleston"
+7f6c6fca174010dfebdac9b23206081bb3222678 caca75b19d7b0282aac7cad4942385edd545971b Bryan Muller <bdmuller@email.unc.edu> 1614357168 -0500	revert: Revert "Revert "Leaflet_charleston""
